@@ -8,7 +8,7 @@ def hello_world():
 
 @app.route('/say/<text>')
 def say(text):
-   return text
+   return "you said: %s" % text
 
 if __name__ == '__main__':
     app.run(debug=True)
